@@ -1,7 +1,6 @@
 .main-intro{
 	padding-top : 10px;
 	padding-bottom : 10px;
-	font-size: 30px;
 }
 
 #intro-cover{
@@ -12,7 +11,10 @@
 @media (max-width : 990px){
 	#intro-cover{
 		padding : 40px;
-		margin-top : 100px
+		margin-top : 70px
+	}
+	.main-intro{
+		font-size: 25px;
 	}
 }
 
@@ -20,5 +22,8 @@
 @media (min-width : 990px){
 	#intro-cover{
 		margin-top : 170px
+	}
+	.main-intro{
+		font-size: 30px;
 	}
 }
