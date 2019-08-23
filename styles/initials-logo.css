@@ -1,0 +1,64 @@
+body {
+	border : 5px solid #1a25fb;
+}
+
+.initials {
+	border-top : 15px solid #1a25fb;
+	border-right : 15px solid #1a25fb;
+	height : 30px;
+	width : 30px;
+	position: absolute;
+	top : 20px;
+	left : -10px;
+	background: #1a25fb;
+	color : white;
+	font-size: 17px
+}
+
+.initials-top {
+	height : 20px;
+	width : 30px;
+	background: #1a25fb;
+	transform: skewX(-45deg);
+	position: absolute;
+	top : 0;
+	left : 0
+}
+
+.initials-shift {
+	transform: translate(5px,-12px);
+	margin : 0;
+}
+
+.initials-logo {
+	padding : 20px;
+	display: inline-block;
+	position: relative;
+}
+
+.initials-right {
+	height : 30px;
+	width : 20px;
+	background: #1a25fb;
+	transform: skewY(-45deg);
+	position: absolute;
+	top : 10px;
+	left : 20px;
+}
+
+
+@media (max-width : 700px){
+	.initials-logo{
+		margin-left : 5vw
+	}
+	#navbar-btn {
+		
+	}
+}
+
+@media (min-width : 700px){
+	.initials-logo{
+		margin-top : 5vh;
+		margin-left : 15vw
+	}
+}
