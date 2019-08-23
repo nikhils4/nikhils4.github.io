@@ -1,0 +1,19 @@
+@media (max-width : 900px){
+	#navbar-btn {
+		margin-top : 2vh
+	}
+	.nav-item {
+		padding-left : 25px;
+	}
+}
+
+@media (min-width : 991px){
+	#navbarSupportedContent{
+		margin-top : 5vh;
+		margin-right : 15vw
+	}
+	.nav-item {
+		padding-left : 10px;
+		padding-right : 10px
+	}
+}

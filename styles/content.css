@@ -1,0 +1,24 @@
+.main-intro{
+	padding-top : 10px;
+	padding-bottom : 10px;
+	font-size: 30px;
+}
+
+#intro-cover{
+	margin-top : 100px
+}
+
+/* For smaller view-width devices */
+@media (max-width : 990px){
+	#intro-cover{
+		padding : 40px;
+		margin-top : 100px
+	}
+}
+
+/* For bigger view-width devices */
+@media (min-width : 990px){
+	#intro-cover{
+		margin-top : 170px
+	}
+}

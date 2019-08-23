@@ -1,5 +1,6 @@
 body {
 	border : 5px solid #1a25fb;
+	font-family: 'Open Sans', sans-serif;
 }
 
 .initials {
@@ -47,16 +48,13 @@ body {
 }
 
 
-@media (max-width : 700px){
+@media (max-width : 900px){
 	.initials-logo{
 		margin-left : 5vw
 	}
-	#navbar-btn {
-		
-	}
 }
 
-@media (min-width : 700px){
+@media (min-width : 991px){
 	.initials-logo{
 		margin-top : 5vh;
 		margin-left : 15vw
