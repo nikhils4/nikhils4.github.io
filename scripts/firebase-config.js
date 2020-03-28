@@ -73,6 +73,7 @@ if ('serviceWorker' in navigator) {
             if (currentToken != storedToken) {
               db.collection('fcm-tokens').add({
                 token: currentToken,
+                time: new Date().getTime(),
               })
                 .then((res) => {
                   // console.log(res);
