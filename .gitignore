@@ -1,1 +1,4 @@
 .DS_Store
+node_modules
+/scripts/push-notification.js
+push-notification.html
