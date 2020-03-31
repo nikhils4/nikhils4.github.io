@@ -487,9 +487,9 @@
 
 		</section>
 	</div>
-	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-		integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"
-		async></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		<!-- Jquery vulnerability patch -->
+	<script>$.ajaxPrefilter(function(s){if(s.crossDomain){s.contents.script = false;}});</script>
 	<script src="./scripts/bootstrap.bundle.min.js" async></script>
 	<script src="./scripts/navbar.js" async></script>
 
