@@ -37,7 +37,7 @@
 		</a>
 
 		<!-- Toggler button -->
-		<button id="navbar-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+		<button style="outline: none;" id="navbar-btn" class="navbar-toggler" type="button" data-toggle="collapse"
 			data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
 			aria-label="Toggle navigation">
 
@@ -112,7 +112,7 @@
 									</div>
 								</div>
 								<div class="col-5 data-card-top-right data-card-image">
-									<img loading="lazy" src="./Assets/Card Image/firebase.png" style="max-width : 100%; height :auto" class="img-fluid">
+									<img loading="lazy" src="./Assets/Card-Image/firebase.png" style="max-width : 100%; height :auto" class="img-fluid">
 								</div>
 							</div>
 						</div>
@@ -139,7 +139,7 @@
 									</div>
 								</div>
 								<div class="col-5 data-card-top-right data-card-image">
-									<img loading="lazy" src="./Assets/Card Image/harvard.png" style="max-width : 100%; height :auto" class="img-fluid">
+									<img loading="lazy" src="./Assets/Card-Image/harvard.png" style="max-width : 100%; height :auto" class="img-fluid">
 								</div>
 							</div>
 						</div>
@@ -169,7 +169,7 @@
 									</div>
 								</div>
 								<div class="col-5 data-card-top-right data-card-image">
-									<img loading="lazy" src="./Assets/Card Image/vinhack.png" style="max-width : 100%; height :auto" class="img-fluid">
+									<img loading="lazy" src="./Assets/Card-Image/vinhack.png" style="max-width : 100%; height :auto" class="img-fluid">
 								</div>
 							</div>
 						</div>
@@ -196,7 +196,7 @@
 									</div>
 								</div>
 								<div class="col-5 data-card-top-right data-card-image">
-									<img loading="lazy" src="./Assets/Card Image/codespace.png" style="max-width : 100%; height :auto; margin-top : 65px" class="img-fluid">
+									<img loading="lazy" src="./Assets/Card-Image/codespace.png" style="max-width : 100%; height :auto; margin-top : 65px" class="img-fluid">
 								</div>
 							</div>
 						</div>
@@ -236,7 +236,11 @@
 									</div>
 								</div>
 								<div class="col-5 data-card-top-right data-card-image">
-									<img loading="lazy" src="./Assets/Card Image/google.png" style="max-width : 100%; height :auto" class="img-fluid">
+									<picture>
+										<source srcset="/Assets/Card-Image/google.webp 1x" type="image/webp">
+										<source srcset="/Assets/Card-Image/google.png  1x" type="image/png">
+										 <img src="./Assets/Card-Image/google.webp" style="max-width : 100%; height :auto" class="img-fluid">
+									</picture>
 								</div>
 							</div>
 						</div>
@@ -263,7 +267,7 @@
 									</div>
 								</div>
 								<div class="col-5 data-card-top-right data-card-image">
-									<img loading="lazy" src="./Assets/Card Image/google.png" style="max-width : 100%; height :auto" class="img-fluid">
+									<img loading="lazy" src="./Assets/Card-Image/google.png" style="max-width : 100%; height :auto" class="img-fluid">
 								</div>
 							</div>
 						</div>
@@ -293,7 +297,7 @@
 									</div>
 								</div>
 								<div class="col-5 data-card-top-right data-card-image">
-									<img loading="lazy" src="./Assets/Card Image/nwoc.jpg" style="max-width : 100%; height :auto" class="img-fluid">
+									<img loading="lazy" src="./Assets/Card-Image/nwoc.jpg" style="max-width : 100%; height :auto" class="img-fluid">
 								</div>
 							</div>
 						</div>
@@ -320,7 +324,7 @@
 									</div>
 								</div>
 								<div class="col-5 data-card-top-right data-card-image">
-									<img loading="lazy" src="./Assets/Card Image/analytics.png" style="max-width : 100%; height :auto" class="img-fluid">
+									<img loading="lazy" src="./Assets/Card-Image/analytics.png" style="max-width : 100%; height :auto" class="img-fluid">
 								</div>
 							</div>
 						</div>
@@ -349,7 +353,7 @@
 									</div>
 								</div>
 								<div class="col-5 data-card-top-right data-card-image">
-									<img loading="lazy" src="./Assets/Card Image/microsoft.png" style="max-width : 100%; height :auto" class="img-fluid">
+									<img loading="lazy" src="./Assets/Card-Image/microsoft.png" style="max-width : 100%; height :auto" class="img-fluid">
 								</div>
 							</div>
 						</div>
@@ -388,7 +392,7 @@
 									</div>
 								</div>
 								<div class="col-5 data-card-top-right data-card-image">
-									<img loading="lazy" src="./Assets/Card Image/localguides.jpeg" style="max-width : 100%; height :auto" class="img-fluid">
+									<img loading="lazy" src="./Assets/Card-Image/localguides.jpeg" style="max-width : 100%; height :auto" class="img-fluid">
 								</div>
 							</div>
 						</div>
@@ -414,7 +418,7 @@
 									</div>
 								</div>
 								<div class="col-5 data-card-top-right data-card-image">
-									<img loading="lazy" src="./Assets/Card Image/crowdsource.png" style="max-width : 100%; height :auto" class="img-fluid">
+									<img loading="lazy" src="./Assets/Card-Image/crowdsource.png" style="max-width : 100%; height :auto" class="img-fluid">
 								</div>
 							</div>
 						</div>
@@ -429,7 +433,7 @@
 
 		</section>
 	</div>
-
+	<script type="text/javascript" src="scripts/webpjs-0.0.2.min.js"></script>
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
 		integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
 		crossorigin="anonymous" async></script>
