@@ -26,14 +26,17 @@ document.getElementById('submit').addEventListener('click', (e) => {
     email,
     message,
   };
+  document.getElementById('submit').disabled = true;
   document.getElementById('submit').innerHTML = 'Sending...';
   db.collection('user-data').add(data)
     .then((res) => {
+      document.getElementById('submit').disabled = false;
       document.getElementById('form-border').style.borderColor = '#4BB543';
       document.getElementById('submit').style.backgroundColor = '#4BB543';
-      document.getElementById('submit').innerHTML = 'Message sent sucessfully';
+      document.getElementById('submit').innerHTML = 'Message sent successfully';
     })
     .catch((err) => {
+      document.getElementById('submit').disabled = false;
       document.getElementById('form-border').style.borderColor = '#FF0000';
       document.getElementById('submit').style.backgroundColor = '#FF0000';
       document.getElementById('submit').innerHTML = 'There was some error';
