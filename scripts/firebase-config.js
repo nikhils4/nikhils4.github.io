@@ -21,18 +21,6 @@ const messaging = firebase.messaging();
 // Firebase firestore database
 const db = firebase.firestore();
 
-// db.collection('user-data').add({
-// 	"name": "Nikhil",
-// 	"email": "nikhilsingh498@gmail.com",
-// 	"message": "Hi there"
-// })
-// 	.then(res => {
-// 		console.log(res);
-// 	})
-// 	.catch(err => {
-// 		console.log(err);
-// 	})
-
 // Callback fired if Instance ID token is updated.
 messaging.onTokenRefresh(() => {
   messaging.getToken()
@@ -97,3 +85,21 @@ if ('serviceWorker' in navigator) {
 } else {
   // onsole.log('Service worker not supported');
 }
+
+document.getElementById('submit').addEventListener('click', (e) => {
+  const name = document.getElementById('name').value;
+  const email = document.getElementById('email').value;
+  const message = document.getElementById('message').value;
+  const data = {
+    name,
+    email,
+    message,
+  };
+  db.collection('user-data').add(data)
+    .then((res) => {
+      console.log(res);
+    })
+    .catch((err) => {
+      console.log(err);
+    });
+});

@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="keywords" content="Nikhil Singh, Nikhil, nikhils4, web developer, techie">
+	<meta name="description" content="Portfolio of Nikhil Singh">
+	<meta name="author" content="Nikhil Singh">
+	<!-- For Facebook -->
+	<meta property="og:type" content="website">
+	<meta property="og:title" content="Nikhil Singh">
+	<meta property="og:description" content="Portfolio of Nikhil Singh">
+	<!-- <meta property="og:image" content="images/fb-og- image" /> Facebook poster to be added-->
+	<meta property="og:url" content="https://nikhils4.github.io/">
+	<meta property="og:site_name" content="Nikhil Singh">
+	<!-- For Twitter -->
+	<meta name="twitter:card" content="website">
+	<meta name="twitter:site" content="Nikhil Singh">
+	<meta name="twitter:title" content="Nikhil Singh">
+	<meta name="twitter:description" content="Portfolio of Nikhil Singh">
+	<meta name="twitter:creator" content="@nikhils_4">
+	<meta name="twitter:image" content="Nikhil Singh">
+	<meta itemprop="name" content="Nikhil Singh">
+	<meta itemprop="description" content="Portfolio of Nikhil Singh">
+	<meta itemprop="image" content="#">
+	<!-- Google search console -->
+	<meta name="google-site-verification" content="5eHHk7X6SknHxGb8ZufXQVgtYSX7u_nPM78J7Ta3QoE" />
+	<link rel="preload" href="./styles/bootstrap.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+	<link rel="preload" href="./styles/initials-logo.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+	<link rel="preload" href="./styles/content.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+	<link rel="preload" href="./styles/navbar.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+	<link rel="preload" href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" as="style"
+		onload="this.onload=null;this.rel='stylesheet'">
+	<noscript>
+		<link rel="stylesheet" href="./styles/initials-logo.css">
+		<link rel="stylesheet" href="./styles/navbar.css">
+		<link rel="preload" href="./styles/bootstrap.min.css">
+	</noscript>
+	<script src="https://www.gstatic.com/firebasejs/7.13.1/firebase-app.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/7.13.1/firebase-firestore.js"></script>
+	<style>
+		input, textarea {
+			padding : 5px;
+			border-radius: 5px;
+			border:2px solid #e0e0e0;
+			outline: none;
+			width : 100%;
+			font-size: 15px; 
+			padding : 10px
+		}
+		input:focus, textarea:focus {
+			border-color: hsl(217, 97%, 46%);
+		}
+		label {
+			transform : translate(15%, 90%); 
+			background-color: white; 
+			font-size: 15px; 
+			padding-left: 5px; 
+			padding-right: 5px;
+		}
+		input:-webkit-autofill,
+		input:-webkit-autofill:hover,
+		input:-webkit-autofill:focus,
+		input:-webkit-autofill:active  {
+				-webkit-box-shadow: 0 0 0 30px white inset;
+		}
+		button {
+			padding-left : 5px;
+			padding-right : 5px;
+		}
+		button:hover{
+			background-color: hsl(217, 97%, 46%);
+		}
+	</style>
+	<title>Nikhil Singh | Achievements</title>
+</head>
+
+<body>
+
+	<!-- Navbar -->
+	<nav class="navbar navbar-expand-lg navbar-light fixed-top" style="background : white">
+
+		<!-- Navbar logo  -->
+		<a class="navbar-brand" href="#">
+			<div class="initials-logo">
+				<div class="initials-top"></div>
+				<div class="initials">
+					<p class="initials-shift">NS</p>
+				</div>
+				<div class="initials-right"></div>
+			</div>
+		</a>
+
+		<!-- Toggler button -->
+		<button style="outline: none;" id="navbar-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+			data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+			aria-label="Toggle navigation">
+
+			<div class="toggle-cover">
+				<div class="toggle-top"></div>
+				<div class="toggle-mid"></div>
+				<div class="toggle-mid"></div>
+				<div class="toggle-bottom"></div>
+			</div>
+		</button>
+
+		<!-- Navbar content -->
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<ul class="navbar-nav ml-auto">
+				<li class="nav-item">
+					<a class="nav-link" href="index.html">HOME</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="achievements.html">ACHIEVEMENTS</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">PROJECTS</a>
+				</li>
+				<li class="nav-item active">
+					<a class="nav-link" href="#">GET IN TOUCH</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">RESUME</a>
+				</li>
+			</ul>
+		</div>
+
+	</nav>
+
+
+		<!--  Get in touch section -->
+		<div class="container-fluid">
+			<!-- Heading  -->
+			<div class="row" style="text-align: center;">
+				<div class="col-12" style="margin-top : 150px; margin-bottom: 35px;">
+					<h1>Get in touch</h1>
+				</div>
+			</div>
+
+			<!-- Form -->
+			<div class="row">
+				<div class="col-1 col-lg-3"></div>
+				<div class="col-10 col-lg-6" style="border:2px solid #e0e0e0; border-radius: 15px;" id="form-border">
+					<form>
+
+					<div class="row" style="text-align: left;	">
+						<div class="col-12 col-lg-6" style="padding : 15px 20px;">
+							<label for="name">Full name<sup>*</sup></label>
+							<input autocapitalize="sentences" type="text" id="name" minlength="1" required>
+						</div>
+						<div class="col-12 col-lg-6" style="padding : 15px 20px;">
+							<label for="email">Email<sup>*</sup></label>
+							<input type="email" id="email" pattern="^\S+@(([a-zA-Z0-9]([a-zA-Z0-9\-]{0,61}[a-zA-Z0-9])?\.)+[a-zA-Z]{2,6})$" title="Please enter valid email address" required>
+						</div>
+						<div class="col-12" style="padding : 15px 20px;">
+							<label for="message">Message<sup>*</sup></label>
+							<textarea id="message" style="resize : none; width : 100%; min-height: 150px;" minlength="10" required></textarea>
+						</div>
+						<div class="col-12" style="padding : 0px 20px 20px;">
+							<button id="submit" class="btn btn-primary" type="submit">Submit</button>
+						</div>
+					</div>
+				</form>
+
+				</div>
+				<div class="col-1 col-lg-3"></div>
+			</div>
+		</div>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="./scripts/getintouch.js"></script>
+	<script src="./scripts/navbar.js" async></script>
+	<script src="./scripts/bootstrap.bundle.min.js" async></script>
+
+</body>
+</html>
