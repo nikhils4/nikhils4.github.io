@@ -8,7 +8,7 @@ body {
 }
 
 #intro-cover{
-	margin-top : 100px
+	margin-top : 200px
 }
 
 /* For smaller view-width devices */
@@ -25,7 +25,7 @@ body {
 /* For bigger view-width devices */
 @media (min-width : 990px){
 	#intro-cover{
-		margin-top : 170px
+		margin-top : 250px
 	}
 	.main-intro{
 		font-size: 30px;
@@ -101,4 +101,8 @@ div.data-card-text>h4 {
 	margin-top: 150px;
 	margin-bottom: 50px;
 	text-align: center;
+}
+
+.navbar {
+	padding-top : 25px
 }
