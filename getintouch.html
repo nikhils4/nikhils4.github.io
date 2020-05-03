@@ -123,22 +123,89 @@
 						<a class="nav-link" href="achievements.html">ACHIEVEMENTS</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="#">PROJECTS</a>
+						<a class="nav-link" href="./projects.html">PROJECTS</a>
 					</li>
 					<li class="nav-item active">
-						<a class="nav-link" href="#">GET IN TOUCH</a>
+						<a class="nav-link" href="./getintouch.html">GET IN TOUCH</a>
 					</li>
 					<li class="nav-item">
 						<a class="nav-link" href="./public/Nikhil's Resume.pdf" target="_blank">RESUME</a>
 					</li>
 				</ul>
 			</div>
-
 		</nav>
+
 
 
 		<!--  Get in touch section -->
 		<div class="container-fluid">
+			<!-- Tech Profiles  -->
+
+			<div class="row" style="text-align: center;">
+				<div class="col-12" style="margin-top : 150px; margin-bottom: 35px;">
+					<h1>Technical</h1>
+				</div>
+			</div>
+
+			<!-- Icons -->
+			<div class="row">
+				<div class="col-1 col-lg-3"></div>
+				<div class="col-10 col-lg-6">
+					<div class="row" style="text-align: center;">
+						<div class="col-3">
+							<img src="./Assets/Card-Image/linkedin.svg" style="height: 50px; margin-top : 50px">
+
+						</div>
+						<div class="col-3">
+							<img src="./Assets/Card-Image/github.svg" style="height: 50px; margin-top : 50px">
+
+						</div>
+						<div class="col-3">
+							<img src="./Assets/Card-Image/leetcode.png" style="height: 50px; margin-top : 50px">
+
+						</div>
+						<div class="col-3">
+							<img src="./Assets/Card-Image/hackerrank.png" style="height: 50px; margin-top : 50px">
+
+						</div>
+					</div>
+				</div>
+				<div class="col-1 col-lg-3"></div>
+			</div>
+
+
+				<!-- Social media profiles  -->
+				<div class="row" style="text-align: center;">
+					<div class="col-12" style="margin-top : 150px; margin-bottom: 35px;">
+						<h1>Social media</h1>
+					</div>
+				</div>
+	
+				<!-- Icons -->
+				<div class="row">
+					<div class="col-1 col-lg-3"></div>
+					<div class="col-10 col-lg-6">
+						<div class="row" style="text-align: center;">
+
+							<div class="col-4">
+								<img src="./Assets/Card-Image/facebook.svg" style="height: 50px; margin-top : 50px">
+							</div>
+							<div class="col-4">
+								<img src="./Assets/Card-Image/twitter.svg" style="height: 50px; margin-top : 50px">
+
+
+							</div>
+							<div class="col-4">
+								<img src="./Assets/Card-Image/instagram.svg" style="height: 50px; margin-top : 50px">
+
+							</div>
+
+						</div>
+	
+					</div>
+					<div class="col-1 col-lg-3"></div>
+				</div>
+
 			<!-- Heading  -->
 			<div class="row" style="text-align: center;">
 				<div class="col-12" style="margin-top : 150px; margin-bottom: 35px;">
@@ -147,7 +214,7 @@
 			</div>
 
 			<!-- Form -->
-			<div class="row">
+			<div class="row" style="margin-bottom: 100px;">
 				<div class="col-1 col-lg-3"></div>
 				<div class="col-10 col-lg-6" style="border:2px solid #e0e0e0; border-radius: 15px;" id="form-border">
 					<form>
@@ -155,27 +222,30 @@
 						<div class="row" style="text-align: left;	">
 							<div class="col-12 col-lg-6" style="padding : 10px 20px;">
 								<label for="name">Full name<sup>*</sup></label>
-								<input autocapitalize="sentences" type="text" id="name" minlength="1" required>
+								<input autocapitalize="sentences" type="text" id="name" oninput="nameVerify(event); activateBtn()">
 							</div>
 							<div class="col-12 col-lg-6" style="padding : 10px 20px;">
 								<label for="email">Email<sup>*</sup></label>
-								<input type="email" id="email"
-									pattern="^\S+@(([a-zA-Z0-9]([a-zA-Z0-9\-]{0,61}[a-zA-Z0-9])?\.)+[a-zA-Z]{2,6})$"
-									title="Please enter valid email address" required>
+								<input type="email" id="email" oninput="emailVerify(event); activateBtn()">
 							</div>
 							<div class="col-12" style="padding : 15px 20px;">
 								<label for="message">Message<sup>*</sup></label>
-								<textarea id="message" style="resize : none; width : 100%; min-height: 150px;" minlength="10"
-									required></textarea>
+								<textarea id="message" style="resize : none; width : 100%; min-height: 150px;" oninput="messageVerify(event); activateBtn()"></textarea>
 							</div>
-							<div class="col-12" style="padding : 0px 20px 20px;">
-								<button id="submit" class="btn btn-primary" type="submit">Submit</button>
+							<div class="col-12" style="padding : 0px 20px 20px; text-align: center;">
+								<button id="submit" style="min-width: 40%;" class="btn btn-primary" type="submit" disabled>Submit</button>
 							</div>
 						</div>
 					</form>
 
 				</div>
 				<div class="col-1 col-lg-3"></div>
+			</div>
+
+			<div class="row">
+				<div class="col-12" style="padding:10px 0px; text-align: center; background-color:#f8f9fa;">
+					&copy; 2020 Nikhil Singh
+				</div>
 			</div>
 		</div>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
