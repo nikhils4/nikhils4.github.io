@@ -11,15 +11,21 @@ body {
 	margin-top : 200px
 }
 
+
+
 /* For smaller view-width devices */
 @media (max-width : 990px){
 	#intro-cover{
 		padding : 40px;
-		margin-top : 70px
+		margin-top : 90px
 	}
 	.main-intro{
 		font-size: 25px;
 	}
+	#down-scroll{
+		display: none;
+	}
+	
 }
 
 /* For bigger view-width devices */
@@ -29,6 +35,9 @@ body {
 	}
 	.main-intro{
 		font-size: 30px;
+	}
+	#down-scroll{
+		display: block;
 	}
 }
 

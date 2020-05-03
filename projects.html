@@ -25,6 +25,7 @@
 	<meta itemprop="description" content="Portfolio of Nikhil Singh">
 	<meta itemprop="image" content="#">
 	<!-- Google search console -->
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 	<meta name="google-site-verification" content="5eHHk7X6SknHxGb8ZufXQVgtYSX7u_nPM78J7Ta3QoE" />
 	<link rel="preload" href="./styles/bootstrap.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
 	<link rel="preload" href="./styles/initials-logo.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
@@ -81,10 +82,10 @@
 					<a class="nav-link" href="achievements.html">ACHIEVEMENTS</a>
 				</li>
 				<li class="nav-item active">
-					<a class="nav-link" href="#">PROJECTS</a>
+					<a class="nav-link" href="./projects.html">PROJECTS</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="getintouch.html">GET IN TOUCH</a>
+					<a class="nav-link" href="./getintouch.html">GET IN TOUCH</a>
 				</li>
 				<li class="nav-item">
 					<a class="nav-link" href="./public/Nikhil's Resume.pdf" target="_blank">RESUME</a>
@@ -94,8 +95,6 @@
 
 	</nav>
 
-
-		<!-- Hacks and Conferences section -->
 		<div class="container-fluid" >
 
 		<section>
@@ -106,31 +105,33 @@
 			</div>
 
 			<div class="row">
+
 				<div class="col-2 d-none d-lg-block d-xl-block"></div>
-				<!-- Firebase Summit card -->
+
 				<div class="col-12 col-lg-4 data-card-outer" data-aos="zoom-in">
 					<div class="row">
-						<div class="col-12 data-card-inner-top" >
+						<div class="col-12 data-card-inner-top">
 							<div class="row">
 								<div class="col-7 data-card-top-left">
 									<div class="row">
 										<div class="col-12 data-card-text">
-											<h4>FindMind Analytics Pvt Ltd</h4>
-											<h5>Web Developer</h5>
-											<p>Mar 2019 - Aug 2019</p>
+											<h4>LegalMind</h4>
+											<h5>Summer Intern</h5>
+											<p>Apr 2020 - Present</p>										
 										</div>
 									</div>
 								</div>
 								<div class="col-5 data-card-top-right data-card-image">
 
-										<img loading="lazy" src="./Assets/Card-Image/findmind.png" alt="findmind-logo"
-										style="max-width : 80%; height :auto; margin-top: 15px" class="img-fluid">
-				
+									<div style="background-color: #1d4fb2; border-radius: 10px; margin-top: 10px;">
+									<img loading="lazy" src="./Assets/Card-Image/legalmind.png" alt="legalmind-logo"
+									style="max-width : 90%; height :auto; padding-bottom: 5px" class="img-fluid">
+										</div>
 								</div>
 							</div>
 						</div>
 						<div class="col-12 data-card-inner-bottom">
-							<a style="text-decoration: none; color: hsl(217, 97%, 46%);" target="_blank" href="https://www.findmind.in/">Know more</a>
+							<a style="text-decoration: none; color: hsl(217, 97%, 46%);" target="_blank" href="https://www.legalmind.tech/">Know more</a>
 						</div>
 					</div>
 				</div>
@@ -138,7 +139,6 @@
 				<div class="col-2 d-block d-lg-none d-xl-none"></div>
 				<div class="col-2 d-block d-lg-none d-xl-none"></div>
 
-				<!-- Vinhack card -->
 				<div class="col-12 col-lg-4 data-card-outer" data-aos="zoom-in">
 					<div class="row">
 						<div class="col-12 data-card-inner-top">
@@ -172,7 +172,6 @@
 
 			<div class="row">
 				<div class="col-2 d-none d-lg-block d-xl-block"></div>
-				<!-- Vinhack card -->
 				<div class="col-12 col-lg-4 data-card-outer" data-aos="zoom-in">
 					<div class="row">
 						<div class="col-12 data-card-inner-top">
@@ -187,27 +186,48 @@
 									</div>
 								</div>
 								<div class="col-5 data-card-top-right data-card-image">
-
 											<img loading="lazy" src="./Assets/Card-Image/vithack.svg" alt="vithack-logo"
 											style="max-width : 100%; height :auto; margin-top : 45px" class="img-fluid">
 								</div>
 							</div>
 						</div>
 						<div class="col-12 data-card-inner-bottom">
-							<a style="text-decoration: none; color: hsl(217, 97%, 46%);" target="_blank" href="https://github.com/nikhils4/HackV">Know more</a>
+							<a style="text-decoration: none; color: hsl(217, 97%, 46%);" target="_blank" href="https://hackv.netlify.app">Know more</a>
 						</div>
 					</div>
 				</div>
 
 				<div class="col-2 d-block d-lg-none d-xl-none"></div>
-					
-
+				<div class="col-2 d-block d-lg-none d-xl-none"></div>
+				<div class="col-12 col-lg-4 data-card-outer" data-aos="zoom-in">
+					<div class="row">
+						<div class="col-12 data-card-inner-top" >
+							<div class="row">
+								<div class="col-7 data-card-top-left">
+									<div class="row">
+										<div class="col-12 data-card-text">
+											<h4>FindMind Analytics Pvt Ltd</h4>
+											<h5>Web Developer</h5>
+											<p>Mar 2019 - Aug 2019</p>
+										</div>
+									</div>
+								</div>
+								<div class="col-5 data-card-top-right data-card-image">
+										<img loading="lazy" src="./Assets/Card-Image/findmind.png" alt="findmind-logo"
+										style="max-width : 80%; height :auto; margin-top: 15px" class="img-fluid">
+								</div>
+							</div>
+						</div>
+						<div class="col-12 data-card-inner-bottom">
+							<a style="text-decoration: none; color: hsl(217, 97%, 46%);" target="_blank" href="https://www.findmind.in/">Know more</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-2 d-none d-lg-block d-xl-block"></div>
 			</div>
 		</section>
 
 
-
-		<!-- Certificates section -->
 		<section>
 			<div class="row section-heading-container">
 				<div class="col-12">
@@ -216,8 +236,37 @@
 			</div>
 
 			<div class="row">
+
 				<div class="col-2 d-none d-lg-block d-xl-block"></div>
-				<!-- Technical Support fundamentals card -->
+
+				<div class="col-12 col-lg-4 data-card-outer" data-aos="zoom-in">
+					<div class="row">
+						<div class="col-12 data-card-inner-top">
+							<div class="row">
+								<div class="col-7 data-card-top-left">
+									<div class="row">
+										<div class="col-12 data-card-text">
+											<h4>Covid-19 Guide</h4>
+											<p>It displays all the information, statistics related to number of cases and guidelines by WHO. It also has a help station to post help requests</p>
+										</div>
+									</div>
+								</div>
+								<div class="col-5 data-card-top-right data-card-image">
+
+											<img loading="lazy" src="./Assets/Card-Image/covid.png" alt="covid19-logo"
+											style="max-width : 100%; height :auto; margin-top : 10px" class="img-fluid">
+								</div>
+							</div>
+						</div>
+						<div class="col-12 data-card-inner-bottom">
+							<a style="text-decoration: none; color: hsl(217, 97%, 46%);" target="_blank" href="https://github.com/TheCodeClutch/all-about-covid19">Souce code</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-2 d-block d-lg-none d-xl-none"></div>
+				<div class="col-2 d-block d-lg-none d-xl-none"></div>
+
 				<div class="col-12 col-lg-4 data-card-outer" data-aos="zoom-in">
 					<div class="row">
 						<div class="col-12 data-card-inner-top">
@@ -244,42 +293,12 @@
 					</div>
 				</div>
 
-				<div class="col-2 d-block d-lg-none d-xl-none"></div>
-				<div class="col-2 d-block d-lg-none d-xl-none"></div>
-
-				<!-- GCP Fundamentals card -->
-				<div class="col-12 col-lg-4 data-card-outer" data-aos="zoom-in">
-					<div class="row">
-						<div class="col-12 data-card-inner-top">
-							<div class="row">
-								<div class="col-7 data-card-top-left">
-									<div class="row">
-										<div class="col-12 data-card-text">
-											<h4>Cloudfest<sup>'19</sup></h4>
-											<p>Developed the website for Cloudfest 2019, tech event of DSC VIT</p>
-										</div>
-									</div>
-								</div>
-								<div class="col-5 data-card-top-right data-card-image">
-
-											<img loading="lazy" src="./Assets/Card-Image/cloudfest.svg" alt="dsc-logo"
-											style="max-width : 100%; height :auto; margin-top : 50px" class="img-fluid">
-								</div>
-							</div>
-						</div>
-						<div class="col-12 data-card-inner-bottom">
-							<a style="text-decoration: none; color: hsl(217, 97%, 46%);" target="_blank" href="https://github.com/nikhils4/Cloudfest-19">Souce code</a>
-						</div>
-					</div>
-				</div>
-
 				<div class="col-2 d-none d-lg-block d-xl-block"></div>
 			</div>
 
 
 			<div class="row">
 				<div class="col-2 d-none d-lg-block d-xl-block"></div>
-				<!-- Winter of Code card -->
 				<div class="col-12 col-lg-4 data-card-outer" data-aos="zoom-in">
 					<div class="row">
 						<div class="col-12 data-card-inner-top">
@@ -294,7 +313,7 @@
 								</div>
 								<div class="col-5 data-card-top-right data-card-image">
 
-											<img loading="lazy" src="./Assets/Card-Image/Devjams.png" alt="njack-logo"
+											<img loading="lazy" src="./Assets/Card-Image/Devjams.png" alt="devjams-logo"
 											style="max-width : 100%; height :auto; margin-top: 60px;" class="img-fluid">
 				
 								</div>
@@ -309,7 +328,6 @@
 				<div class="col-2 d-block d-lg-none d-xl-none"></div>
 				<div class="col-2 d-block d-lg-none d-xl-none"></div>
 
-				<!--Google Analytics Individual card -->
 				<div class="col-12 col-lg-4 data-card-outer" data-aos="zoom-in">
 					<div class="row">
 						<div class="col-12 data-card-inner-top">
@@ -317,21 +335,20 @@
 								<div class="col-7 data-card-top-left">
 									<div class="row">
 										<div class="col-12 data-card-text">
-											<h4>Webp converter</h4>
-											<p>Developed the website for converting the images to Webp format</p>
+											<h4>Cloudfest<sup>'19</sup></h4>
+											<p>Developed the website for Cloudfest 2019, tech event of DSC VIT</p>
 										</div>
 									</div>
 								</div>
 								<div class="col-5 data-card-top-right data-card-image">
-				
-											<img loading="lazy" src="./Assets/Card-Image/default-web.png" alt="ganalytics-logo"
-											style="max-width : 100%; height :auto" class="img-fluid">
-							
+
+											<img loading="lazy" src="./Assets/Card-Image/cloudfest.svg" alt="cloudfest-logo"
+											style="max-width : 100%; height :auto; margin-top : 50px" class="img-fluid">
 								</div>
 							</div>
 						</div>
 						<div class="col-12 data-card-inner-bottom">
-							<a style="text-decoration: none; color: hsl(217, 97%, 46%);" target="_blank" href="https://github.com/nikhils4/webP-converter">Source code</a>
+							<a style="text-decoration: none; color: hsl(217, 97%, 46%);" target="_blank" href="https://github.com/nikhils4/Cloudfest-19">Souce code</a>
 						</div>
 					</div>
 				</div>
@@ -341,7 +358,6 @@
 
 			<div class="row">
 				<div class="col-2 d-none d-lg-block d-xl-block"></div>
-				<!-- Microsoft card -->
 				<div class="col-12 col-lg-4 data-card-outer" data-aos="zoom-in">
 					<div class="row">
 						<div class="col-12 data-card-inner-top">
@@ -356,7 +372,7 @@
 								</div>
 								<div class="col-5 data-card-top-right data-card-image">
 
-											<img loading="lazy" src="./Assets/Card-Image/default-web.png" alt="microsoft-logo"
+											<img loading="lazy" src="./Assets/Card-Image/default-web.png" alt="quadro-logo"
 											style="max-width : 100%; height :auto" class="img-fluid">
 								</div>
 							</div>
@@ -370,7 +386,6 @@
 				<div class="col-2 d-block d-lg-none d-xl-none"></div>
 				<div class="col-2 d-block d-lg-none d-xl-none"></div>
 
-				<!-- GCP Fundamentals card -->
 				<div class="col-12 col-lg-4 data-card-outer" data-aos="zoom-in">
 					<div class="row">
 						<div class="col-12 data-card-inner-top">
@@ -385,7 +400,7 @@
 								</div>
 								<div class="col-5 data-card-top-right data-card-image">
 			
-											<img loading="lazy" src="./Assets/Card-Image/vithack.svg" alt="dsc-logo"
+											<img loading="lazy" src="./Assets/Card-Image/vithack.svg" alt="vithack-logo"
 											style="max-width : 100%; height :auto; margin-top: 45px" class="img-fluid">
 								</div>
 							</div>
@@ -401,7 +416,6 @@
 
 			<div class="row">
 				<div class="col-2 d-none d-lg-block d-xl-block"></div>
-				<!-- Technical Support fundamentals card -->
 				<div class="col-12 col-lg-4 data-card-outer" data-aos="zoom-in">
 					<div class="row">
 						<div class="col-12 data-card-inner-top">
@@ -416,7 +430,7 @@
 								</div>
 								<div class="col-5 data-card-top-right data-card-image">
 
-										<img src="./Assets/Card-Image/ad-abolish.png" alt="keepnotes-logo" style="max-width : 75%; height :auto; margin-top: 15px" class="img-fluid">
+										<img src="./Assets/Card-Image/ad-abolish.png" alt="ad-abolish-logo" style="max-width : 75%; height :auto; margin-top: 15px" class="img-fluid">
 								</div>
 							</div>
 						</div>
@@ -429,7 +443,6 @@
 				<div class="col-2 d-block d-lg-none d-xl-none"></div>
 				<div class="col-2 d-block d-lg-none d-xl-none"></div>
 
-				<!-- GCP Fundamentals card -->
 				<div class="col-12 col-lg-4 data-card-outer" data-aos="zoom-in">
 					<div class="row">
 						<div class="col-12 data-card-inner-top">
@@ -443,7 +456,7 @@
 									</div>
 								</div>
 								<div class="col-5 data-card-top-right data-card-image">
-									<img src="./Assets/Card-Image/social-dock.png" alt="keepnotes-logo" style="max-width : 75%; height :auto; margin-top: 15px" class="img-fluid">
+									<img src="./Assets/Card-Image/social-dock.png" alt="social-dock-logo" style="max-width : 75%; height :auto; margin-top: 15px" class="img-fluid">
 
 								</div>
 							</div>
@@ -459,7 +472,6 @@
 
 			<div class="row">
 				<div class="col-2 d-none d-lg-block d-xl-block"></div>
-				<!-- Technical Support fundamentals card -->
 				<div class="col-12 col-lg-4 data-card-outer" data-aos="zoom-in">
 					<div class="row">
 						<div class="col-12 data-card-inner-top">
@@ -468,19 +480,19 @@
 									<div class="row">
 										<div class="col-12 data-card-text">
 											<h4>Women Techies</h4>
-											<p>Developed a Chrome extension which instantly skips all the ads on Youtube, also removes banner ads</p>
+											<p>Developed website for Women Techies, women centeric tech event of WTM, VIT</p>
 										</div>
 									</div>
 								</div>
 								<div class="col-5 data-card-top-right data-card-image">
 
-										<img src="./Assets/Card-Image/womentechies.png" alt="keepnotes-logo" style="max-width : 80%; height :auto; margin-top: 20px"
+										<img src="./Assets/Card-Image/womentechies.png" alt="women-techies-logo" style="max-width : 80%; height :auto; margin-top: 20px"
 											class="img-fluid">
 								</div>
 							</div>
 						</div>
 						<div class="col-12 data-card-inner-bottom">
-							<a style="text-decoration: none; color: hsl(217, 97%, 46%);" target="_blank" href="https://github.com/nikhils4/Youtube-ad-skipper">Source Code</a>
+							<a style="text-decoration: none; color: hsl(217, 97%, 46%);" target="_blank" href="https://github.com/nikhils4/Women-Techies">Source Code</a>
 						</div>
 					</div>
 				</div>
@@ -488,7 +500,6 @@
 				<div class="col-2 d-block d-lg-none d-xl-none"></div>
 				<div class="col-2 d-block d-lg-none d-xl-none"></div>
 
-				<!-- GCP Fundamentals card -->
 				<div class="col-12 col-lg-4 data-card-outer" data-aos="zoom-in">
 					<div class="row">
 						<div class="col-12 data-card-inner-top">
@@ -497,27 +508,63 @@
 									<div class="row">
 										<div class="col-12 data-card-text">
 											<h4>Weather.IO</h4>
-											<p>Developed a Chrome extension which serves as central place for users all major Social Media profiles</p>
+											<p>Weather.IO is a weather web app which gives the current weather conditions</p>
 										</div>
 									</div>
 								</div>
 								<div class="col-5 data-card-top-right data-card-image">
 						
-											<img loading="lazy" src="./Assets/Card-Image/default-web.png" alt="dsc-logo"
+											<img loading="lazy" src="./Assets/Card-Image/default-web.png" alt="weather.io-logo"
 											style="max-width : 100%; height :auto" class="img-fluid">
 								</div>
 							</div>
 						</div>
 						<div class="col-12 data-card-inner-bottom">
-							<a style="text-decoration: none; color: hsl(217, 97%, 46%);" target="_blank" href="https://github.com/nikhils4/Chrome-Extension">Source code</a>
+							<a style="text-decoration: none; color: hsl(217, 97%, 46%);" target="_blank" href="https://github.com/nikhils4/Weather-web-app">Source code</a>
 						</div>
 					</div>
 				</div>
 
 				<div class="col-2 d-none d-lg-block d-xl-block"></div>
 			</div>
-		</section>
 
+			<div class="row" style="margin-bottom: 100px;">
+				<div class="col-2 d-none d-lg-block d-xl-block"></div>
+
+				<div class="col-12 col-lg-4 data-card-outer" data-aos="zoom-in">
+					<div class="row">
+						<div class="col-12 data-card-inner-top">
+							<div class="row">
+								<div class="col-7 data-card-top-left">
+									<div class="row">
+										<div class="col-12 data-card-text">
+											<h4>Webp converter</h4>
+											<p>Developed the website for converting the images to Webp format</p>
+										</div>
+									</div>
+								</div>
+								<div class="col-5 data-card-top-right data-card-image">
+				
+											<img loading="lazy" src="./Assets/Card-Image/default-web.png" alt="webp-converter-logo"
+											style="max-width : 100%; height :auto" class="img-fluid">
+							
+								</div>
+							</div>
+						</div>
+						<div class="col-12 data-card-inner-bottom">
+							<a style="text-decoration: none; color: hsl(217, 97%, 46%);" target="_blank" href="https://github.com/nikhils4/webP-converter">Source code</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-2 d-block d-lg-none d-xl-none"></div>
+			</div>
+		</section>
+		<div class="row">
+			<div class="col-12" style="padding:10px 0px; text-align: center; background-color:#f8f9fa;">
+				&copy; 2020 Nikhil Singh
+			</div>
+		</div>
 	</div>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 	<script src="./scripts/navbar.js" async></script>
