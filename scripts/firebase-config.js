@@ -42,7 +42,7 @@ if ('serviceWorker' in navigator) {
       messaging.requestPermission()
         .then(() => {
           messaging.getToken();
-        // console.log('requestPermission Notification permission granted.');
+          // console.log('requestPermission Notification permission granted.');
         })
         .then((token) => {
           // console.log('requestPermission: ', token); // Display user token
@@ -83,5 +83,5 @@ if ('serviceWorker' in navigator) {
       // console.log('ServiceWorker registration failed: ', err);
     });
 } else {
-  // onsole.log('Service worker not supported');
+  // console.log('Service worker not supported');
 }
