@@ -14,6 +14,7 @@ document.getElementById('submit').addEventListener('click', (e) => {
     name,
     email,
     message,
+    date: new Date(),
   };
   document.getElementById('submit').disabled = true;
   document.getElementById('submit').innerHTML = 'Sending...';
